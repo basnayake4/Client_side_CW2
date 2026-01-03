@@ -8,7 +8,7 @@
       "tenure": "Freehold",
       "description": "Attractive three bedroom semi-detached family home...",
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/prop1pic1small.jpg",
+      "picture": "src/assets/images/prop1pic1.jpg",
       "url": "properties/prop1.html",
       "added": {
         "month": "October",
@@ -24,7 +24,7 @@
       "tenure": "Freehold",
       "description": "Presented in excellent decorative order throughout...",
       "location": "Crofton Road Orpington BR6",
-      "picture": "images/prop2pic1small.jpg",
+      "picture": "src/assets/images/prop2pic1.jpg",
       "url": "properties/prop2.html",
       "added": {
         "month": "September",
@@ -40,7 +40,7 @@
       "tenure": "Leasehold",
       "description": "Modern one-bedroom apartment in the city center...",
       "location": "King's Road, London",
-      "picture": "images/prop3pic1small.jpg",
+      "picture": "src/assets/images/prop3pic1.jpg",
       "url": "properties/prop3.html",
       "added": {
         "month": "January",
@@ -56,7 +56,7 @@
       "tenure": "Freehold",
       "description": "Luxury villa with pool and garden...",
       "location": "Beverly Hills, Los Angeles",
-      "picture": "images/prop4pic1small.jpg",
+      "picture": "src/assets/images/prop4pic1.jpg",
       "url": "properties/prop4.html",
       "added": {
         "month": "March",
@@ -72,7 +72,7 @@
       "tenure": "Freehold",
       "description": "Charming townhouse near local amenities...",
       "location": "Oxford Street, London",
-      "picture": "images/prop5pic1small.jpg",
+      "picture": "src/assets/images/prop5pic1.jpg",
       "url": "properties/prop5.html",
       "added": {
         "month": "May",
@@ -88,7 +88,7 @@
       "tenure": "Freehold",
       "description": "Cozy countryside cottage with garden...",
       "location": "Cotswolds, England",
-      "picture": "images/prop6pic1small.jpg",
+      "picture": "src/assets/images/prop6pic1.jpg",
       "url": "properties/prop6.html",
       "added": {
         "month": "June",
@@ -104,7 +104,7 @@
       "tenure": "Leasehold",
       "description": "Modern penthouse with city views...",
       "location": "Canary Wharf, London",
-      "picture": "images/prop7pic1small.jpg",
+      "picture": "src/assets/images/prop7pic1.jpg",
       "url": "properties/prop7.html",
       "added": {
         "month": "August",
@@ -120,7 +120,7 @@
       "tenure": "Leasehold",
       "description": "Compact studio ideal for singles or students...",
       "location": "Cambridge, England",
-      "picture": "images/prop8pic1small.jpg",
+      "picture": "src/assets/images/prop8pic1.jpg",
       "url": "properties/prop8.html",
       "added": {
         "month": "September",
