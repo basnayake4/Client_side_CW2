@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Intro.css";
 
 function Intro() {
@@ -14,8 +15,12 @@ function Intro() {
             your lifestyle and budget.
           </p>
           <div className="intro-buttons">
-            <button className="primary-btn">Browse Properties</button>
-            <button className="secondary-btn">Contact Agent</button>
+            <Link to="/properties">
+              <button className="primary-btn">Browse Properties</button>
+            </Link>
+            <Link to="/contact">
+              <button className="secondary-btn">Contact Us</button>
+            </Link>
           </div>
         </div>
       </div>

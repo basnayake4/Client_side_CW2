@@ -35,15 +35,14 @@ function App() {
               <Route
                 path="/"
                 element={
-                  <>
+                  <div>
                     <Intro />
                     <Search onSearch={setFilteredProperties} />
-
                     <div className="main-content">
                       <PropertyList properties={filteredProperties} />
                       <FavouritesSidebar />
                     </div>
-                  </>
+                  </div>
                 }
               />
 
@@ -53,7 +52,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
 
-              {/* Property Details */}
+              {/* Individual Property Details */}
               <Route path="/property/:id" element={<PropertyPage />} />
             </Routes>
           </div>

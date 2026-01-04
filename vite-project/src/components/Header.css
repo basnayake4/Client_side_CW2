@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: #2e7d32; /* green */
+  background-color: #2e7d32;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
@@ -14,11 +14,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Logo */
 .logo {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -31,51 +32,40 @@
 .nav {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .nav a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #c8e6c9;
-}
-
-/* Active nav link */
-.nav a.active {
-  font-weight: 700;
-  border-bottom: 2px solid #c8e6c9;
-}
-
-/* CTA button */
-.cta-btn {
-  background-color: #ffffff;
-  color: #2e7d32;
-  border: none;
-  padding: 10px 22px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: 8px 12px;
   border-radius: 6px;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.cta-btn:hover {
-  background-color: #c8e6c9;
-  color: #1b5e20;
+.nav a:hover {
+  background-color: #1b5e20;
+  color: #c8e6c9;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
+.nav a.active {
+  border-bottom: 3px solid #c8e6c9;
+  font-weight: 700;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
   }
 
-  .header-container {
-    padding: 16px 20px;
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
   }
 }

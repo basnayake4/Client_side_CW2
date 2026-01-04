@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -13,27 +13,22 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="nav">
-          <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
             Home
           </NavLink>
 
-          <NavLink to="/favourites" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/favourites" className={({ isActive }) => (isActive ? "active" : "")}>
             Favourites
           </NavLink>
 
-          <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
             About
           </NavLink>
 
-          <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
             Contact
           </NavLink>
         </nav>
-
-        {/* CTA Button → Properties Page */}
-        <Link to="/properties">
-          <button className="cta-btn">All Properties</button>
-        </Link>
       </div>
     </header>
   );
