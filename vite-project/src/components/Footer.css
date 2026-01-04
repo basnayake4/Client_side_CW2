@@ -1,6 +1,6 @@
 .site-footer {
-  background-color: #0077cc;
-  color: white;
+  background-color: #2e7d32; /* same green as header */
+  color: #ffffff;
   padding: 40px 20px 20px 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -22,7 +22,7 @@
 .footer-brand p {
   margin: 5px 0 0 0;
   font-size: 0.95rem;
-  color: #e0e0e0;
+  color: #c8e6c9; /* light green */
 }
 
 .footer-links {
@@ -35,6 +35,7 @@
   margin-bottom: 10px;
   font-size: 1rem;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .footer-column a {
@@ -47,12 +48,12 @@
 }
 
 .footer-column a:hover {
-  color: #cce6ff;
+  color: #c8e6c9;
 }
 
 .footer-bottom {
   margin-top: 30px;
   text-align: center;
   font-size: 0.85rem;
-  color: #d0e6ff;
+  color: #e8f5e9;
 }

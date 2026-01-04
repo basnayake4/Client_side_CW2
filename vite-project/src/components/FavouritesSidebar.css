@@ -1,0 +1,26 @@
+.favourites-sidebar {
+  width: 260px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.fav-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}

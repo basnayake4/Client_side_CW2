@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import { FavouritesProvider } from "./context/FavouritesContext";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Search from "./components/Search";
 import PropertyList from "./components/PropertyList";
 import PropertyPage from "./components/PropertyPage";
+import FavouritesSidebar from "./components/FavouritesSidebar";
 import Footer from "./components/Footer";
 import propertiesData from "./assets/properties.json";
 import "./App.css";
@@ -15,23 +17,29 @@ function App() {
   );
 
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Intro />
-              <Search onSearch={setFilteredProperties} />
-              <PropertyList properties={filteredProperties} />
-            </>
-          }
-        />
-        <Route path="/property/:id" element={<PropertyPage />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <FavouritesProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Intro />
+                <Search onSearch={setFilteredProperties} />
+
+                <div className="main-content">
+                  <PropertyList properties={filteredProperties} />
+                  <FavouritesSidebar />
+                </div>
+              </>
+            }
+          />
+          <Route path="/property/:id" element={<PropertyPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </FavouritesProvider>
   );
 }
 
