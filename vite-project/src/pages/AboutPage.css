@@ -1,0 +1,19 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  line-height: 1.7;
+}
+
+.about-title {
+  color: #2e7d32; /* green theme */
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #333333;
+}

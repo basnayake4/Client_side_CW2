@@ -26,36 +26,40 @@ function App() {
   return (
     <FavouritesProvider>
       <Router>
-        <Header />
+        <div className="app-container">
+          <Header />
 
-        <Routes>
-          {/* HOME PAGE */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Intro />
-                <Search onSearch={setFilteredProperties} />
+          <div className="main-content-wrapper">
+            <Routes>
+              {/* Home Page */}
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Intro />
+                    <Search onSearch={setFilteredProperties} />
 
-                <div className="main-content">
-                  <PropertyList properties={filteredProperties} />
-                  <FavouritesSidebar />
-                </div>
-              </>
-            }
-          />
+                    <div className="main-content">
+                      <PropertyList properties={filteredProperties} />
+                      <FavouritesSidebar />
+                    </div>
+                  </>
+                }
+              />
 
-          {/* HEADER LINKED PAGES */}
-          <Route path="/properties" element={<PropertiesPage />} />
-          <Route path="/favourites" element={<FavouritesPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+              {/* Separate pages */}
+              <Route path="/properties" element={<PropertiesPage />} />
+              <Route path="/favourites" element={<FavouritesPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
 
-          {/* PROPERTY DETAILS */}
-          <Route path="/property/:id" element={<PropertyPage />} />
-        </Routes>
+              {/* Property Details */}
+              <Route path="/property/:id" element={<PropertyPage />} />
+            </Routes>
+          </div>
 
-        <Footer />
+          <Footer />
+        </div>
       </Router>
     </FavouritesProvider>
   );
