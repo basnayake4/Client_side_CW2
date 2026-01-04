@@ -26,16 +26,11 @@ const PropertyList = ({ properties }) => {
                 alt={property.type}
                 className="property-image"
               />
-
               <div className="property-card-body">
                 <h3>{property.type} • {property.bedrooms} Beds</h3>
-                <p className="price">
-                  LKR {property.price.toLocaleString()}
-                </p>
+                <p className="price">LKR {property.price.toLocaleString()}</p>
                 <p className="location">{property.location}</p>
-                <p className="description">
-                  {property.description.substring(0, 80)}...
-                </p>
+                <p className="description">{property.description.substring(0, 80)}...</p>
               </div>
             </div>
           </Link>
