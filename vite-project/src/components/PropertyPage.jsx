@@ -1,3 +1,4 @@
+// PropertyPage.jsx
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import propertiesData from "../assets/properties.json";
@@ -11,7 +12,9 @@ const TABS = [
 
 const PropertyPage = () => {
   const { id } = useParams();
-  const property = propertiesData.properties.find((p) => p.id.toString() === id);
+  const property = propertiesData.properties.find(
+    (p) => p.id.toString() === id
+  );
   const [activeTab, setActiveTab] = useState("description");
 
   if (!property) {
@@ -23,11 +26,14 @@ const PropertyPage = () => {
     );
   }
 
-  // Images: main + 6 thumbnails
-  const images = [property.picture];
-  for (let i = 2; i <= 7; i++) {
-    images.push(`src/assets/images/${property.id}pic${i}.jpg`);
+  // Load all 7 images from public folder
+  const images = [];
+  for (let i = 1; i <= 7; i++) {
+    images.push(`/images/${property.id}pic${i}.jpg`);
   }
+
+  // Load floorplan image
+  const floorplanImage = `/images/${property.id}-floorplan.jpg`;
 
   return (
     <div className="property-page-container">
@@ -70,14 +76,16 @@ const PropertyPage = () => {
               <h3>Description</h3>
               <p>{property.description}</p>
               <p><strong>Tenure:</strong> {property.tenure}</p>
-              <p><strong>Added:</strong> {property.added.day} {property.added.month}, {property.added.year}</p>
+              <p>
+                <strong>Added:</strong> {property.added.day} {property.added.month}, {property.added.year}
+              </p>
             </div>
           )}
           {activeTab === "floorplan" && (
             <div>
               <h3>Floor Plan</h3>
               <img
-                src={`src/assets/images/${property.id}-floorplan.jpg`}
+                src={floorplanImage}
                 alt="Floor plan"
                 className="floor-plan"
               />
