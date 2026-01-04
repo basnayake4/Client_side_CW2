@@ -1,23 +1,29 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
       <div className="header-container">
+        {/* Logo */}
         <div className="logo">
           Property<span>Hub</span>
         </div>
 
+        {/* Navigation */}
         <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#properties">Properties</a>
-          <a href="#favourites">Favourites</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+          <NavLink to="/properties" className={({ isActive }) => isActive ? "active" : ""}>Properties</NavLink>
+          <NavLink to="/favourites" className={({ isActive }) => isActive ? "active" : ""}>Favourites</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
         </nav>
 
-        <button className="cta-btn">List Property</button>
+        {/* Call-to-action button */}
+        <Link to="/list-property">
+          <button className="cta-btn">List Property</button>
+        </Link>
       </div>
     </header>
   );

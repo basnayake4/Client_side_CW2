@@ -24,7 +24,7 @@
 }
 
 .logo span {
-  color: #c8e6c9; /* light green */
+  color: #c8e6c9;
 }
 
 /* Navigation */
@@ -43,6 +43,12 @@
 
 .nav a:hover {
   color: #c8e6c9;
+}
+
+/* Active nav link */
+.nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #c8e6c9;
 }
 
 /* CTA button */

@@ -10,7 +10,10 @@ import FavouritesSidebar from "./components/FavouritesSidebar";
 import Footer from "./components/Footer";
 import propertiesData from "./assets/properties.json";
 import "./App.css";
+import PropertiesPage from "./pages/PropertiesPage";
 
+// Inside <Routes>...
+<Route path="/properties" element={<PropertiesPage />} />
 function App() {
   const [filteredProperties, setFilteredProperties] = useState(
     propertiesData.properties
