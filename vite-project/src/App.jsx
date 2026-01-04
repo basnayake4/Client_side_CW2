@@ -1,24 +1,38 @@
-import { useState } from 'react'
-import Header from './components/Header.jsx'
-import Intro from './components/Intro.jsx'
-import PropertyList from './components/PropertyList.jsx'
-import Search from './components/Search.jsx'
-import Footer from './components/Footer.jsx'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Header from "./components/Header";
+import Intro from "./components/Intro";
+import Search from "./components/Search";
+import PropertyList from "./components/PropertyList";
+import PropertyPage from "./components/PropertyPage";
+import Footer from "./components/Footer";
+import propertiesData from "./assets/properties.json";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [filteredProperties, setFilteredProperties] = useState(
+    propertiesData.properties
+  );
 
   return (
-    <>
-       <Header />
-        <Intro />
-        <Search />
-        <PropertyList />
-        <Footer />
-        
-    </>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Intro />
+              <Search onSearch={setFilteredProperties} />
+              <PropertyList properties={filteredProperties} />
+            </>
+          }
+        />
+        <Route path="/property/:id" element={<PropertyPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
