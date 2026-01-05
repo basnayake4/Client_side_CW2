@@ -8,7 +8,17 @@
       "tenure": "Freehold",
       "description": "A beautifully presented 3-bedroom house on Petts Wood Road, Petts Wood, Orpington BR5. This charming family home features spacious living areas, a modern fitted kitchen, and light-filled bedrooms, all complemented by a private garden and convenient access to local amenities, transport links, and excellent schools — perfect for relaxed suburban living.",
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "src/assets/images/prop1pic1.jpg",
+      "picture": "src/assets/images/prop1pic1.webp",
+      "floorplan": "images/Property_1/1.0.webp",
+      "images": [
+        "images/Property_1/1.1webp",
+        "images/Property_1/1.2webp",
+        "images/Property_1/1.3webp",
+        "images/Property_1/1.4webp",
+        "images/Property_1/1.5webp",
+        "images/Property_1/1.6webp",
+        "images/Property_1/1.7webp"
+      ],
       "url": "properties/prop1.html",
       "added": {
         "month": "October",
@@ -24,7 +34,17 @@
       "tenure": "Freehold",
       "description": "A stylish 2-bedroom apartment on Crofton Road, Orpington BR6, offering contemporary living in a desirable location. This well-appointed home features a light-filled open plan living area, modern kitchen, and comfortable bedrooms, all within easy reach of local shops, transport links, and green spaces — ideal for first-time buyers or investors.",
       "location": "Crofton Road Orpington BR6",
-      "picture": "src/assets/images/prop2pic1.jpg",
+      "picture": "src/assets/images/prop2pic1.webp",
+      "floorplan": "images/Property_2/2.0.webp",
+      "images": [
+        "images/Property_2/2.1webp",
+        "images/Property_2/2.2webp",
+        "images/Property_2/2.3webp",
+        "images/Property_2/2.4webp",
+        "images/Property_2/2.5webp",
+        "images/Property_2/2.6webp",
+        "images/Property_2/2.7webp"
+      ],
       "url": "properties/prop2.html",
       "added": {
         "month": "September",
@@ -40,7 +60,17 @@
       "tenure": "Leasehold",
       "description": "A modern 1-bedroom apartment located on King’s Road, London, offering stylish city living in a prime location. The property features a bright living space, a contemporary kitchen, and a comfortable bedroom, all within easy access to shops, restaurants, and excellent transport links — ideal for professionals or investors.”",
       "location": "King's Road, London",
-      "picture": "src/assets/images/prop3pic1.jpg",
+      "picture": "src/assets/images/prop3pic1.webp",
+      "floorplan": "images/Property_3/3.0.webp",
+      "images": [
+        "images/Property_3/3.1webp",
+        "images/Property_3/3.2webp",
+        "images/Property_3/3.3webp",
+        "images/Property_3/3.4webp",
+        "images/Property_3/3.5webp",
+        "images/Property_3/3.6webp",
+        "images/Property_3/3.7webp"
+      ],
       "url": "properties/prop3.html",
       "added": {
         "month": "January",
@@ -56,7 +86,17 @@
       "tenure": "Freehold",
       "description": "A stunning 4-bedroom house located in the heart of Beverly Hills, Los Angeles, offering luxurious living in a prestigious neighborhood. This elegant home features spacious interiors, high-end finishes, and beautifully designed living areas, complemented by outdoor space and close proximity to world-class dining, shopping, and entertainment.",
       "location": "Beverly Hills, Los Angeles",
-      "picture": "src/assets/images/prop4pic1.jpg",
+      "picture": "src/assets/images/prop4pic1.webp",
+      "floorplan": "images/Property_4/4.0.webp",
+      "images": [
+        "images/Property_4/4.1webp",
+        "images/Property_4/4.2webp",
+        "images/Property_4/4.3webp",
+        "images/Property_4/4.4webp",
+        "images/Property_4/4.5webp",
+        "images/Property_4/4.6webp",
+        "images/Property_4/4.7webp"
+      ],
       "url": "properties/prop4.html",
       "added": {
         "month": "March",
@@ -72,7 +112,17 @@
       "tenure": "Freehold",
       "description": "A spacious 3-bedroom apartment located on Oxford Street, London, offering modern city living in a prime central location. The property features generous living areas, contemporary finishes, and comfortable bedrooms, all within immediate reach of shopping, dining, and excellent transport links.",
       "location": "Oxford Street, London",
-      "picture": "src/assets/images/prop5pic1.jpg",
+      "picture": "src/assets/images/prop5pic1.webp",
+      "floorplan": "images/Property_5/5.0.webp",
+      "images": [
+        "images/Property_5/5.1webp",
+        "images/Property_5/5.2webp",
+        "images/Property_5/5.3webp",
+        "images/Property_5/5.4webp",
+        "images/Property_5/5.5webp",
+        "images/Property_5/5.6webp",
+        "images/Property_5/5.7webp"
+      ],
       "url": "properties/prop5.html",
       "added": {
         "month": "May",
@@ -88,7 +138,17 @@
       "tenure": "Freehold",
       "description": "A charming 2-bedroom house located in the picturesque Cotswolds, England, offering peaceful countryside living. This inviting home features comfortable living spaces, a well-appointed kitchen, and cozy bedrooms, surrounded by beautiful scenery and close to local villages and amenities.”",
       "location": "Cotswolds, England",
-      "picture": "src/assets/images/prop6pic1.jpg",
+      "picture": "src/assets/images/prop6pic1.webp",
+      "floorplan": "images/Property_6/6.0.webp",
+      "images": [
+        "images/Property_6/6.1webp",
+        "images/Property_6/6.2webp",
+        "images/Property_6/6.3webp",
+        "images/Property_6/6.4webp",
+        "images/Property_6/6.5webp",
+        "images/Property_6/6.6webp",
+        "images/Property_6/6.7webp"
+      ],
       "url": "properties/prop6.html",
       "added": {
         "month": "June",
@@ -104,7 +164,17 @@
       "tenure": "Leasehold",
       "description": "A modern 3-bedroom house located in Canary Wharf, London, offering contemporary city living in a vibrant financial district. The property features spacious living areas, a sleek kitchen, and comfortable bedrooms, with excellent access to shops, restaurants, and transport links.",
       "location": "Canary Wharf, London",
-      "picture": "src/assets/images/prop7pic1.jpg",
+      "picture": "src/assets/images/prop7pic1.webp",
+      "floorplan": "images/Property_7/7.0.webp",
+      "images": [
+        "images/Property_7/7.1webp",
+        "images/Property_7/7.2webp",
+        "images/Property_7/7.3webp",
+        "images/Property_7/7.4webp",
+        "images/Property_7/7.5webp",
+        "images/Property_7/7.6webp",
+        "images/Property_7/7.7webp"
+      ],
       "url": "properties/prop7.html",
       "added": {
         "month": "August",
@@ -120,7 +190,17 @@
       "tenure": "Leasehold",
       "description": "A cozy 1-bedroom house located in Cambridge, England, offering comfortable and convenient living in a historic city. The property features a bright living space, a well-equipped kitchen, and a comfortable bedroom, close to local amenities, transport links, and the city’s renowned universities.",
       "location": "Cambridge, England",
-      "picture": "src/assets/images/prop8pic1.jpg",
+      "picture": "src/assets/images/prop8pic1.webp",
+      "floorplan": "images/Property_8/8.0.webp",
+      "images": [
+        "images/Property_8/8.1webp",
+        "images/Property_8/8.2webp",
+        "images/Property_8/8.3webp",
+        "images/Property_8/8.4webp",
+        "images/Property_8/8.5webp",
+        "images/Property_8/8.6webp",
+        "images/Property_8/8.7webp"
+      ],
       "url": "properties/prop8.html",
       "added": {
         "month": "September",
