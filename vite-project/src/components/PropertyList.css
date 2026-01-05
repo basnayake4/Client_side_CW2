@@ -4,11 +4,11 @@
   padding: 10px 0;
 }
 
-/* Grid layout: 2 cards per row */
+/* Grid layout: 3 cards per row */
 .property-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 /* Wrapper for absolute positioning */
@@ -19,62 +19,59 @@
 /* Card styling */
 .property-card {
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 12px;
 }
 
 .property-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Image */
 .property-image {
   width: 100%;
-  height: 220px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* Card body */
 .property-card-body h3 {
-  font-size: 18px;
-  margin: 0 0 6px;
+  font-size: 16px;
+  margin: 0 0 4px;
   color: #1f2937;
 }
 
 .price {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #2563eb;
 }
 
 .location {
-  font-size: 14px;
+  font-size: 12px;
   color: #6b7280;
 }
 
-/* ========================= */
 /* HEART FAVOURITE BUTTON */
-/* ========================= */
-
 .heart-btn {
   position: absolute;
   top: 12px;
   right: 12px;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: none;
   background: rgba(255, 255, 255, 0.95);
   color: #9ca3af;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   z-index: 10;
   display: flex;
@@ -98,7 +95,7 @@
   color: inherit;
 }
 
-/* Responsive */
+/* Responsive: single column on small screens */
 @media (max-width: 768px) {
   .property-grid {
     grid-template-columns: 1fr;
