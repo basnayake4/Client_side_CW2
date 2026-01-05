@@ -15,7 +15,9 @@ export const FavouritesProvider = ({ children }) => {
     setFavourites((prev) => prev.filter((p) => p.id !== id));
   };
 
-  const clearFavourites = () => setFavourites([]);
+  const clearFavourites = () => {
+    setFavourites([]);
+  };
 
   return (
     <FavouritesContext.Provider

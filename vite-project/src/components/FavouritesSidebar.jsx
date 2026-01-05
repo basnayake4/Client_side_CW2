@@ -14,6 +14,7 @@ const FavouritesSidebar = () => {
   return (
     <aside
       className="favourites-sidebar"
+      data-testid="favourites-sidebar"
       onDragOver={(e) => e.preventDefault()}
       onDrop={handleDrop}
     >
@@ -26,17 +27,16 @@ const FavouritesSidebar = () => {
       {favourites.map((property) => (
         <div key={property.id} className="fav-item">
           <span>{property.type}</span>
-          <button
-            className="remove-btn"
-            onClick={() => removeFavourite(property.id)}
-          >
-            ✕
-          </button>
+          <button onClick={() => removeFavourite(property.id)}>✕</button>
         </div>
       ))}
 
       {favourites.length > 0 && (
-        <button className="clear-btn" onClick={clearFavourites}>
+        <button
+          className="clear-btn"
+          data-testid="clear-favourites"
+          onClick={clearFavourites}
+        >
           Clear All
         </button>
       )}
