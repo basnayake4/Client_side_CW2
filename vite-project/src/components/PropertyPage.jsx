@@ -12,9 +12,7 @@ const TABS = [
 
 const PropertyPage = () => {
   const { id } = useParams();
-  const property = propertiesData.properties.find(
-    (p) => p.id.toString() === id
-  );
+  const property = propertiesData.properties.find((p) => p.id === id);
   const [activeTab, setActiveTab] = useState("description");
 
   if (!property) {
@@ -26,20 +24,11 @@ const PropertyPage = () => {
     );
   }
 
-  // Load all 7 images from public folder
-  const images = [];
-  for (let i = 1; i <= 7; i++) {
-    images.push(`/images/${property.id}pic${i}.jpg`);
-  }
-
-  // Load floorplan image
-  const floorplanImage = `/images/${property.id}-floorplan.jpg`;
-
   return (
     <div className="property-page-container">
       {/* Images Grid */}
       <div className="property-images-grid">
-        {images.map((img, idx) => (
+        {property.images.map((img, idx) => (
           <img
             key={idx}
             src={img}
@@ -85,7 +74,7 @@ const PropertyPage = () => {
             <div>
               <h3>Floor Plan</h3>
               <img
-                src={floorplanImage}
+                src={property.floorplan}
                 alt="Floor plan"
                 className="floor-plan"
               />

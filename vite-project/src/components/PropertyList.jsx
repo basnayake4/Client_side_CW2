@@ -1,13 +1,17 @@
+// PropertyList.jsx
 import { Link } from "react-router-dom";
 import { useFavourites } from "../context/FavouritesContext";
 import "./PropertyList.css";
+import propertiesData from "../assets/properties.json"; // Import JSON file
 
-const PropertyList = ({ properties }) => {
+const PropertyList = () => {
   const { favourites, addFavourite, removeFavourite } = useFavourites();
 
+  // Check if property is in favourites
   const isFavourite = (id) =>
     favourites.some((property) => property.id === id);
 
+  // Toggle favourite status
   const toggleFavourite = (property) => {
     if (isFavourite(property.id)) {
       removeFavourite(property.id);
@@ -19,7 +23,7 @@ const PropertyList = ({ properties }) => {
   return (
     <div className="property-list-container">
       <div className="property-grid">
-        {properties.map((property) => (
+        {propertiesData.properties.map((property) => (
           <div
             key={property.id}
             className="property-card-wrapper"
@@ -40,24 +44,23 @@ const PropertyList = ({ properties }) => {
             </button>
 
             {/* Property Card */}
-            <Link
-              to={`/property/${property.id}`}
-              className="property-card-link"
-            >
+            <Link to={`/property/${property.id}`} className="property-card-link">
               <div className="property-card">
+                {/* Main Picture from JSON */}
                 <img
-                  src={property.picture}
+                  src={property.picture}   // <-- uses "picture" field
                   alt={property.type}
                   className="property-image"
+                  onError={(e) => {
+                    e.target.src = "/images/default.webp"; // fallback image
+                  }}
                 />
 
                 <div className="property-card-body">
                   <h3>
                     {property.type} • {property.bedrooms} Beds
                   </h3>
-                  <p className="price">
-                    LKR {property.price.toLocaleString()}
-                  </p>
+                  <p className="price">LKR {property.price.toLocaleString()}</p>
                   <p className="location">{property.location}</p>
                 </div>
               </div>
