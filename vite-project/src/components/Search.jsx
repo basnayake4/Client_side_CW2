@@ -35,7 +35,7 @@ function Search() {
 
   return (
     <div className="search-container">
-      <form className="search-form" onSubmit={handleSearch}>
+      <form className="search-form" onSubmit={handleSearch} data-testid="search-form">
         <div className="search-grid">
           <div className="search-field">
             <label>Property Type</label>
@@ -71,7 +71,7 @@ function Search() {
           </div>
 
           <div className="search-field">
-            <button type="submit">Search</button>
+            <button type="submit" >Search</button>
           </div>
         </div>
       </form>
